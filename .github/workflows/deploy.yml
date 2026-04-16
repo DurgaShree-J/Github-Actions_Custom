@@ -11,7 +11,7 @@ jobs:
       - name: Get code
         uses: actions/checkout@v3
       - name: Load and cache dependencies
-        uses: ./.github/actions/cached.actions   # if using custom actions published in github repo then refer to the repos identifier
+        uses: ./.github/actions/cached-actions   # if using custom actions published in github repo then refer to the repos identifier
       - name: Lint code
         run: npm run lint
   test:
